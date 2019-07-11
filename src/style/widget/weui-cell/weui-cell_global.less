@@ -1,5 +1,5 @@
 /*
-* Tencent is pleased to support the open source community by making WeUI available.
+* Tencent is pleased to support the open source community by making wxui available.
 * 
 * Copyright (C) 2017 THL A29 Limited, a Tencent company. All rights reserved.
 * 
@@ -18,61 +18,61 @@
 
 /*
 z-index:
-0: .weui-swiped-btn
-1: .weui-cell_swiped .weui-cell__bd
-2: .weui-cells和.weui-cell的1px线
+0: .wxui-swiped-btn
+1: .wxui-cell_swiped .wxui-cell__bd
+2: .wxui-cells和.wxui-cell的1px线
 */
 
-.weui-cells {
-    margin-top: @weuiCellsMarginTop;
-    background-color: @weuiCellBg;
-    line-height: @weuiCellLineHeight;
-    font-size: @weuiCellFontSize; //cell中间有效高度23px，跟客户端默认图标尺寸一致
+.wxui-cells {
+    margin-top: @wxuiCellsMarginTop;
+    background-color: @wxuiCellBg;
+    line-height: @wxuiCellLineHeight;
+    font-size: @wxuiCellFontSize; //cell中间有效高度23px，跟客户端默认图标尺寸一致
 
     overflow: hidden; //因为每个cell的border使用before元素left搞的，ie下伪元素的containing block估计跟标准不同，在cell上用oh不生效
 
     // onepx
     position: relative;
     &:before {
-        .setTopLine(@weuiCellBorderColor);
+        .setTopLine(@wxuiCellBorderColor);
         z-index: 2;
     }
     &:after {
-        .setBottomLine(@weuiCellBorderColor);
+        .setBottomLine(@wxuiCellBorderColor);
         z-index: 2;
     }
 }
 
-.weui-cells__title {
+.wxui-cells__title {
     margin-top: 16px;
     margin-bottom: 3px;
-    padding-left: @weuiCellGapH;
-    padding-right: @weuiCellGapH;
-    color: @weuiTextColorDesc;
-    font-size: @weuiCellTipsFontSize;
+    padding-left: @wxuiCellGapH;
+    padding-right: @wxuiCellGapH;
+    color: @wxuiTextColorDesc;
+    font-size: @wxuiCellTipsFontSize;
     line-height:1.4;
 
-    & + .weui-cells {
+    & + .wxui-cells {
         margin-top: 0;
     }
 }
 
-.weui-cells__tips {
+.wxui-cells__tips {
     margin-top: .3em; // 8px - 行高
-    color: @weuiTextColorDesc;
-    padding-left: @weuiCellGapH;
-    padding-right: @weuiCellGapH;
-    font-size: @weuiCellTipsFontSize;
+    color: @wxuiTextColorDesc;
+    padding-left: @wxuiCellGapH;
+    padding-right: @wxuiCellGapH;
+    font-size: @wxuiCellTipsFontSize;
 }
 
-.weui-cell {
-    padding: @weuiCellGapV;
+.wxui-cell {
+    padding: @wxuiCellGapV;
     position: relative; //这个是为了兼容cells容器onepx方案被before挡住而做的
     display: flex;
     align-items: center;
     &:before {
-        .setTopLine(@weuiCellBorderColor);
-        left: @weuiCellGapH;
+        .setTopLine(@wxuiCellBorderColor);
+        left: @wxuiCellGapH;
         z-index: 2;
     }
     &:first-child {
@@ -81,13 +81,13 @@ z-index:
         }
     }
 }
-.weui-cell_primary{
+.wxui-cell_primary{
     align-items: flex-start;
 }
-.weui-cell__bd{
+.wxui-cell__bd{
     flex: 1;
 }
-.weui-cell__ft {
+.wxui-cell__ft {
     text-align: right;
-    color: @weuiTextColorDesc;
+    color: @wxuiTextColorDesc;
 }

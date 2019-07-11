@@ -4,39 +4,39 @@
         <p class="page__desc">上传组件，一般配合<a class="link" href="#gallery">组件Gallery</a>来使用。</p>
     </div>
     <div class="page__bd">
-        <div class="weui-gallery" id="gallery">
-            <span class="weui-gallery__img" id="galleryImg"></span>
-            <div class="weui-gallery__opr">
-                <a href="javascript:" class="weui-gallery__del">
-                    <i class="weui-icon-delete weui-icon_gallery-delete"></i>
+        <div class="wxui-gallery" id="gallery">
+            <span class="wxui-gallery__img" id="galleryImg"></span>
+            <div class="wxui-gallery__opr">
+                <a href="javascript:" class="wxui-gallery__del">
+                    <i class="wxui-icon-delete wxui-icon_gallery-delete"></i>
                 </a>
             </div>
         </div>
 
-        <div class="weui-cells weui-cells_form">
-            <div class="weui-cell">
-                <div class="weui-cell__bd">
-                    <div class="weui-uploader">
-                        <div class="weui-uploader__hd">
-                            <p class="weui-uploader__title">图片上传</p>
-                            <div class="weui-uploader__info">0/2</div>
+        <div class="wxui-cells wxui-cells_form">
+            <div class="wxui-cell">
+                <div class="wxui-cell__bd">
+                    <div class="wxui-uploader">
+                        <div class="wxui-uploader__hd">
+                            <p class="wxui-uploader__title">图片上传</p>
+                            <div class="wxui-uploader__info">0/2</div>
                         </div>
-                        <div class="weui-uploader__bd">
-                            <ul class="weui-uploader__files" id="uploaderFiles">
-                                <li class="weui-uploader__file" style="background-image:url(./images/pic_160.png)"></li>
-                                <li class="weui-uploader__file" style="background-image:url(./images/pic_160.png)"></li>
-                                <li class="weui-uploader__file" style="background-image:url(./images/pic_160.png)"></li>
-                                <li class="weui-uploader__file weui-uploader__file_status" style="background-image:url(./images/pic_160.png)">
-                                    <div class="weui-uploader__file-content">
-                                        <i class="weui-icon-warn"></i>
+                        <div class="wxui-uploader__bd">
+                            <ul class="wxui-uploader__files" id="uploaderFiles">
+                                <li class="wxui-uploader__file" style="background-image:url(./images/pic_160.png)"></li>
+                                <li class="wxui-uploader__file" style="background-image:url(./images/pic_160.png)"></li>
+                                <li class="wxui-uploader__file" style="background-image:url(./images/pic_160.png)"></li>
+                                <li class="wxui-uploader__file wxui-uploader__file_status" style="background-image:url(./images/pic_160.png)">
+                                    <div class="wxui-uploader__file-content">
+                                        <i class="wxui-icon-warn"></i>
                                     </div>
                                 </li>
-                                <li class="weui-uploader__file weui-uploader__file_status" style="background-image:url(./images/pic_160.png)">
-                                    <div class="weui-uploader__file-content">50%</div>
+                                <li class="wxui-uploader__file wxui-uploader__file_status" style="background-image:url(./images/pic_160.png)">
+                                    <div class="wxui-uploader__file-content">50%</div>
                                 </li>
                             </ul>
-                            <div class="weui-uploader__input-box">
-                                <input id="uploaderInput" class="weui-uploader__input" type="file" accept="image/*" multiple/>
+                            <div class="wxui-uploader__input-box">
+                                <input id="uploaderInput" class="wxui-uploader__input" type="file" accept="image/*" multiple/>
                             </div>
                         </div>
                     </div>
@@ -50,7 +50,7 @@
 </div>
 <script type="text/javascript">
     $(function(){
-        var tmpl = '<li class="weui-uploader__file" style="background-image:url(#url#)"></li>',
+        var tmpl = '<li class="wxui-uploader__file" style="background-image:url(#url#)"></li>',
             $gallery = $("#gallery"), $galleryImg = $("#galleryImg"),
             $uploaderInput = $("#uploaderInput"),
             $uploaderFiles = $("#uploaderFiles")

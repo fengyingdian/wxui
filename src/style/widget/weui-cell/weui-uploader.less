@@ -1,5 +1,5 @@
 /*
-* Tencent is pleased to support the open source community by making WeUI available.
+* Tencent is pleased to support the open source community by making wxui available.
 * 
 * Copyright (C) 2017 THL A29 Limited, a Tencent company. All rights reserved.
 * 
@@ -16,37 +16,37 @@
 
 @import "../../base/fn";
 
-.weui-uploader{}
-.weui-uploader__hd{
+.wxui-uploader{}
+.wxui-uploader__hd{
     display: flex;
-    padding-bottom: @weuiCellGapV;
+    padding-bottom: @wxuiCellGapV;
     align-items: center;
 }
-.weui-uploader__title{
+.wxui-uploader__title{
     flex: 1;
 }
-.weui-uploader__info{
-    color: @weuiTextColorTips;
+.wxui-uploader__info{
+    color: @wxuiTextColorTips;
 }
 
-.weui-uploader__bd{
-    margin-bottom: @weuiCellGapH - (@weuiCellGapV + @weuiUploaderFileSpacing);
-    margin-right: -@weuiUploaderFileSpacing;
+.wxui-uploader__bd{
+    margin-bottom: @wxuiCellGapH - (@wxuiCellGapV + @wxuiUploaderFileSpacing);
+    margin-right: -@wxuiUploaderFileSpacing;
     overflow: hidden;
 }
-.weui-uploader__files{
+.wxui-uploader__files{
     list-style: none;
 }
-.weui-uploader__file{
+.wxui-uploader__file{
     float: left;
-    margin-right: @weuiUploaderFileSpacing;
-    margin-bottom: @weuiUploaderFileSpacing;
-    width: @weuiUploaderSize;
-    height: @weuiUploaderSize;
+    margin-right: @wxuiUploaderFileSpacing;
+    margin-bottom: @wxuiUploaderFileSpacing;
+    width: @wxuiUploaderSize;
+    height: @wxuiUploaderSize;
     background: no-repeat center center;
     background-size: cover;
 }
-.weui-uploader__file_status{
+.wxui-uploader__file_status{
     position: relative;
     &:before{
         content: " ";
@@ -57,54 +57,54 @@
         left: 0;
         background-color: rgba(0, 0, 0, .5);
     }
-    .weui-uploader__file-content{
+    .wxui-uploader__file-content{
         display: block;
     }
 }
-.weui-uploader__file-content{
+.wxui-uploader__file-content{
     display: none;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #FFFFFF;
-    .weui-icon-warn{
+    .wxui-icon-warn{
         display: inline-block;
     }
 }
-.weui-uploader__input-box{
+.wxui-uploader__input-box{
     float:left;
     position: relative;
-    margin-right: @weuiUploaderFileSpacing;
-    margin-bottom: @weuiUploaderFileSpacing;
-    width: @weuiUploaderSize;
-    height: @weuiUploaderSize;
+    margin-right: @wxuiUploaderFileSpacing;
+    margin-bottom: @wxuiUploaderFileSpacing;
+    width: @wxuiUploaderSize;
+    height: @wxuiUploaderSize;
     box-sizing:border-box;
-    background-color:@weuiBgColorDefault;
+    background-color:@wxuiBgColorDefault;
     &:before, &:after{
         content: " ";
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background-color: @weuiUploaderBorderColor;
+        background-color: @wxuiUploaderBorderColor;
     }
     &:before{
-        width: @weuiUploaderBorderWidth + 1;
-        height: @weuiUploaderSize / 3;
+        width: @wxuiUploaderBorderWidth + 1;
+        height: @wxuiUploaderSize / 3;
     }
     &:after{
-        width: @weuiUploaderSize / 3;
-        height: @weuiUploaderBorderWidth + 1;
+        width: @wxuiUploaderSize / 3;
+        height: @wxuiUploaderBorderWidth + 1;
     }
     &:active{
-        border-color: @weuiUploaderActiveBorderColor;
+        border-color: @wxuiUploaderActiveBorderColor;
         &:before, &:after{
-            background-color: @weuiUploaderActiveBorderColor;
+            background-color: @wxuiUploaderActiveBorderColor;
         }
     }
 }
-.weui-uploader__input{
+.wxui-uploader__input{
     position: absolute;
     z-index: 1;
     top: 0;

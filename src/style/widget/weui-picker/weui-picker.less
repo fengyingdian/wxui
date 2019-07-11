@@ -1,5 +1,5 @@
 /*
-* Tencent is pleased to support the open source community by making WeUI available.
+* Tencent is pleased to support the open source community by making wxui available.
 * 
 * Copyright (C) 2017 THL A29 Limited, a Tencent company. All rights reserved.
 * 
@@ -17,7 +17,7 @@
 @import "../../base/fn";
 
 @pickerItemHeight: 34px;
-.weui-picker {
+.wxui-picker {
     position: fixed;
     width: 100%;
     left: 0;
@@ -32,7 +32,7 @@
     transition: transform .3s;
 }
 
-.weui-picker__hd {
+.wxui-picker__hd {
     display: flex;
     padding: 16px;
     padding: 16px calc(16px ~"+ constant(safe-area-inset-right)") 16px calc(16px ~"+ constant(safe-area-inset-left)");
@@ -42,25 +42,25 @@
     font-size: 17px;
     line-height:1.4;
     &:after {
-        .setBottomLine(@weuiLineColorLight);
+        .setBottomLine(@wxuiLineColorLight);
     }
 }
 
-.weui-picker__action {
+.wxui-picker__action {
     display: block;
     flex: 1;
-    color: @weuiLinkColorDefault;
+    color: @wxuiLinkColorDefault;
 
     &:first-child {
         text-align: left;
-        color: @weuiTextColorTitle;
+        color: @wxuiTextColorTitle;
     }
     &:last-child {
         text-align: right;
     }
 }
 
-.weui-picker__bd {
+.wxui-picker__bd {
     display: flex;
     position: relative;
     background-color: #fff;
@@ -68,25 +68,25 @@
     overflow: hidden;
 }
 
-.weui-picker__group {
+.wxui-picker__group {
     flex: 1;
     position: relative;
     height: 100%;
     //-webkit-mask-box-image: -webkit-linear-gradient(bottom,transparent,transparent 5%,#fff 50%,#fff 50%,transparent 95%,transparent);
     &:first-child{
-      .weui-picker__item {
+      .wxui-picker__item {
         padding-left:constant(safe-area-inset-left);
         padding-left:env(safe-area-inset-left);
       }
     } &:last-child{
-      .weui-picker__item {
+      .wxui-picker__item {
         padding-right:constant(safe-area-inset-right);
         padding-right:env(safe-area-inset-right);
       }
     }
 }
 
-.weui-picker__mask {
+.wxui-picker__mask {
     position: absolute;
     top: 0;
     left: 0;
@@ -101,7 +101,7 @@
     transform: translateZ(0);
 }
 
-.weui-picker__indicator {
+.wxui-picker__indicator {
     width: 100%;
     height: @pickerItemHeight;
     position: absolute;
@@ -109,30 +109,30 @@
     top: 102px;
     z-index: 3;
     &:before {
-        .setTopLine(@weuiLineColorLight);
+        .setTopLine(@wxuiLineColorLight);
     }
     &:after {
-        .setBottomLine(@weuiLineColorLight);
+        .setBottomLine(@wxuiLineColorLight);
     }
 }
 
-.weui-picker__content {
+.wxui-picker__content {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
 }
 
-.weui-picker__item {
+.wxui-picker__item {
     height: @pickerItemHeight;
     line-height: @pickerItemHeight;
     text-align: center;
-    color: @weuiTextColorTitle;
+    color: @wxuiTextColorTitle;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
 }
 
-.weui-picker__item_disabled {
-    color: @weuiTextColorDesc;
+.wxui-picker__item_disabled {
+    color: @wxuiTextColorDesc;
 }

@@ -1,5 +1,5 @@
 /*
-* Tencent is pleased to support the open source community by making WeUI available.
+* Tencent is pleased to support the open source community by making wxui available.
 * 
 * Copyright (C) 2017 THL A29 Limited, a Tencent company. All rights reserved.
 * 
@@ -15,17 +15,17 @@
 */
 
 @import "../../base/fn";
-@import "weui-btn_global";
-@import "weui-btn_default";
-@import "weui-btn_primary";
-@import "weui-btn_warn";
-@import "weui-btn_disabled";
-@import "weui-btn_loading";
-@import "weui-btn_plain";
-@import "weui-btn_cell";
+@import "wxui-btn_global";
+@import "wxui-btn_default";
+@import "wxui-btn_primary";
+@import "wxui-btn_warn";
+@import "wxui-btn_disabled";
+@import "wxui-btn_loading";
+@import "wxui-btn_plain";
+@import "wxui-btn_cell";
 
 button, input {
-    &.weui-btn {
+    &.wxui-btn {
         border-width: 0;
         outline: 0;
         -webkit-appearance: none;
@@ -33,43 +33,43 @@ button, input {
             outline: 0;
         }
     }
-    &.weui-btn_inline,&.weui-btn_mini {
+    &.wxui-btn_inline,&.wxui-btn_mini {
         width: auto;
     }
-    &.weui-btn_plain-primary,&.weui-btn_plain-default{
+    &.wxui-btn_plain-primary,&.wxui-btn_plain-default{
         border-width: 1px;
         background-color: transparent;
     }
 }
 
-.weui-btn_mini {
+.wxui-btn_mini {
     display: inline-block;
     width:auto;
-    padding: 0 unit(12px/@weuiBtnMiniFontSize,em);
-    line-height: unit(@weuiBtnMiniHeight/@weuiBtnMiniFontSize);
-    font-size: @weuiBtnMiniFontSize;
+    padding: 0 unit(12px/@wxuiBtnMiniFontSize,em);
+    line-height: unit(@wxuiBtnMiniHeight/@wxuiBtnMiniFontSize);
+    font-size: @wxuiBtnMiniFontSize;
 }
 
 
 /*gap between btn*/
-.weui-btn + .weui-btn {
-    margin-top: @weuiBtnDefaultGap;
+.wxui-btn + .wxui-btn {
+    margin-top: @wxuiBtnDefaultGap;
 }
 
-.weui-btn.weui-btn_inline + .weui-btn.weui-btn_inline {
+.wxui-btn.wxui-btn_inline + .wxui-btn.wxui-btn_inline {
     margin-top: auto;
-    margin-left: @weuiBtnDefaultGap;
+    margin-left: @wxuiBtnDefaultGap;
 }
 
-.weui-btn-area {
-    margin: 48px @weuiBtnDefaultGap 8px; 
+.wxui-btn-area {
+    margin: 48px @wxuiBtnDefaultGap 8px; 
 
 }
-.weui-btn-area_inline {
+.wxui-btn-area_inline {
     display: flex;
-    .weui-btn {
+    .wxui-btn {
         margin-top: auto;
-        margin-right: @weuiBtnDefaultGap;
+        margin-right: @wxuiBtnDefaultGap;
         width: 100%;
         flex: 1;
         &:last-child {

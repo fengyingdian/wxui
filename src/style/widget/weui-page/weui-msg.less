@@ -1,5 +1,5 @@
 /*
-* Tencent is pleased to support the open source community by making WeUI available.
+* Tencent is pleased to support the open source community by making wxui available.
 * 
 * Copyright (C) 2017 THL A29 Limited, a Tencent company. All rights reserved.
 * 
@@ -15,12 +15,12 @@
 */
 
 @import "../../base/fn";
-@import "../weui-button/weui-button";
+@import "../wxui-button/wxui-button";
 
-.weui-msg {
-    padding-top: @weuiMsgPaddingTop;
-    padding:calc(@weuiMsgPaddingTop ~"+ constant(safe-area-inset-top)") constant(safe-area-inset-right) constant(safe-area-inset-bottom) constant(safe-area-inset-left);
-    padding:calc(@weuiMsgPaddingTop ~"+ env(safe-area-inset-top)") env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+.wxui-msg {
+    padding-top: @wxuiMsgPaddingTop;
+    padding:calc(@wxuiMsgPaddingTop ~"+ constant(safe-area-inset-top)") constant(safe-area-inset-right) constant(safe-area-inset-bottom) constant(safe-area-inset-left);
+    padding:calc(@wxuiMsgPaddingTop ~"+ env(safe-area-inset-top)") env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
     text-align: center;
     line-height:1.4;
     min-height:100%;
@@ -28,71 +28,71 @@
     display:flex;
     flex-direction: column;
     background-color: #FFFFFF;
-    a:not(.weui-btn){
-      color: @weuiLinkColorDefault;
+    a:not(.wxui-btn){
+      color: @wxuiLinkColorDefault;
       display: inline-block;
       vertical-align: baseline;
     }
 }
-.weui-msg__icon-area {
+.wxui-msg__icon-area {
     margin-bottom: 32px;
 }
-.weui-msg__text-area {
+.wxui-msg__text-area {
     margin-bottom: 32px;
     padding:0 32px;
     flex:1;
     line-height:1.6;
     &:first-child{padding-top:96px;}
 }
-.weui-msg__title {
-    margin-bottom: @weuiMsgTitleGap;
+.wxui-msg__title {
+    margin-bottom: @wxuiMsgTitleGap;
     font-weight: 700;
     font-size: 22px;
     word-wrap:break-word;
     word-break:break-all;
 }
-.weui-msg__desc {
+.wxui-msg__desc {
     font-size: 17px;
-    color: @weuiTextColorTitle;
+    color: @wxuiTextColorTitle;
     word-wrap:break-word;
     word-break:break-all;
     margin-bottom:16px;
 }
-.weui-msg__desc-primary {
+.wxui-msg__desc-primary {
     font-size: 14px;
-    color: @weuiTextColorDesc;
+    color: @wxuiTextColorDesc;
     word-wrap:break-word;
     word-break:break-all;
     margin-bottom:16px;
 }
-.weui-msg__opr-area {
+.wxui-msg__opr-area {
     margin-bottom: 16px;
-    .weui-btn-area{margin:0}
-    .weui-btn + .weui-btn{margin-bottom:16px;}
+    .wxui-btn-area{margin:0}
+    .wxui-btn + .wxui-btn{margin-bottom:16px;}
     &:last-child{margin-bottom:96px;}
-    & + .weui-msg__extra-area{
+    & + .wxui-msg__extra-area{
       margin-top:48px;
     }
 }
-.weui-msg__tips-area {
+.wxui-msg__tips-area {
     margin-bottom: 16px;
     padding:0 40px;
-    .weui-msg__opr-area + &{
+    .wxui-msg__opr-area + &{
       margin-bottom: 48px;
     }
     &:last-child{
       margin-bottom: 64px;
     }
 }
-.weui-msg__tips {
+.wxui-msg__tips {
   font-size:12px;
-  color: @weuiTextColorDesc;
+  color: @wxuiTextColorDesc;
 }
-.weui-msg__extra-area {
+.wxui-msg__extra-area {
     margin-bottom: 24px;
     font-size: 12px;
-    color: @weuiTextColorDesc;
-    a{color: @weuiLinkColorDefault;}
+    color: @wxuiTextColorDesc;
+    a{color: @wxuiLinkColorDefault;}
 }
 
 

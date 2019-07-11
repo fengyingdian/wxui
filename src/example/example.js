@@ -187,7 +187,7 @@ $(function () {
     }
     function androidInputBugFix(){
         // .container 设置了 overflow 属性, 导致 Android 手机下输入框获取焦点时, 输入法挡住输入框的 bug
-        // 相关 issue: https://github.com/weui/weui/issues/15
+        // 相关 issue: https://github.com/wxui/wxui/issues/15
         // 解决方法:
         // 0. .container 去掉 overflow 属性, 但此 demo 下会引发别的问题
         // 1. 参考 http://stackoverflow.com/questions/23757345/android-does-not-correctly-scroll-on-input-focus-if-not-body-element
@@ -204,13 +204,13 @@ $(function () {
     }
     function setJSAPI(){
         var option = {
-            title: 'WeUI, 为微信 Web 服务量身设计',
-            desc: 'WeUI, 为微信 Web 服务量身设计',
-            link: "https://weui.io",
+            title: 'wxui, 为微信 Web 服务量身设计',
+            desc: 'wxui, 为微信 Web 服务量身设计',
+            link: "https://wxui.io",
             imgUrl: 'https://mmbiz.qpic.cn/mmemoticon/ajNVdqHZLLA16apETUPXh9Q5GLpSic7lGuiaic0jqMt4UY8P4KHSBpEWgM7uMlbxxnVR7596b3NPjUfwg7cFbfCtA/0'
         };
 
-        $.getJSON('https://weui.io/api/sign?url=' + encodeURIComponent(location.href.split('#')[0]), function (res) {
+        $.getJSON('https://wxui.io/api/sign?url=' + encodeURIComponent(location.href.split('#')[0]), function (res) {
             wx.config({
                 beta: true,
                 debug: false,
@@ -241,7 +241,7 @@ $(function () {
                 wx.onMenuShareTimeline(option);
                 wx.onMenuShareQQ(option);
                 wx.onMenuShareAppMessage({
-                    title: 'WeUI',
+                    title: 'wxui',
                     desc: '为微信 Web 服务量身设计',
                     link: location.href,
                     imgUrl: 'https://mmbiz.qpic.cn/mmemoticon/ajNVdqHZLLA16apETUPXh9Q5GLpSic7lGuiaic0jqMt4UY8P4KHSBpEWgM7uMlbxxnVR7596b3NPjUfwg7cFbfCtA/0'

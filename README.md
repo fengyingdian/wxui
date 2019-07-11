@@ -1,36 +1,36 @@
-WeUI - tailor-made for WeChat web service
+wxui - tailor-made for WeChat web service
 ====
 
-[![Build Status](https://travis-ci.org/Tencent/weui.svg?branch=master)](https://travis-ci.org/Tencent/weui)
-[![npm version](https://img.shields.io/npm/v/weui.svg)](https://www.npmjs.org/package/weui)
+[![Build Status](https://travis-ci.org/Tencent/wxui.svg?branch=master)](https://travis-ci.org/Tencent/wxui)
+[![npm version](https://img.shields.io/npm/v/wxui.svg)](https://www.npmjs.org/package/wxui)
 
 [中文版本](README_cn.md)
 
 ## Introduction
 
-WeUI is an WeChat-like UI framework officially designed by the WeChat Design Team, tailor-made for WeChat Web development, in order to improve and standardize the experience for WeChat users. Including components such as `button`、`cell`、`dialog`、 `progress`、 `toast`、`article`、`actionsheet`、`icon`.
+wxui is an WeChat-like UI framework officially designed by the WeChat Design Team, tailor-made for WeChat Web development, in order to improve and standardize the experience for WeChat users. Including components such as `button`、`cell`、`dialog`、 `progress`、 `toast`、`article`、`actionsheet`、`icon`.
 
 ## Mobile demo
 
-![https://weui.io](https://cloud.githubusercontent.com/assets/4652816/15662614/178efd46-2725-11e6-8952-09d7836e968d.png)
+![https://wxui.io](https://cloud.githubusercontent.com/assets/4652816/15662614/178efd46-2725-11e6-8952-09d7836e968d.png)
 
-[https://weui.io](https://weui.io)
+[https://wxui.io](https://wxui.io)
 
-Legacy version 1.x: [https://weui.io/1.x](https://weui.io/1.x)
+Legacy version 1.x: [https://wxui.io/1.x](https://wxui.io/1.x)
 
-Legacy version 0.4.x: [https://weui.io/0.4.x](https://weui.io/0.4.x)
+Legacy version 0.4.x: [https://wxui.io/0.4.x](https://wxui.io/0.4.x)
 
 ## Documentations
 
-- WeUI documentation [Wiki](https://github.com/Tencent/weui/wiki)
-- WeUI design reference [weui-design](https://github.com/weui/weui-design)
+- wxui documentation [Wiki](https://github.com/Tencent/wxui/wiki)
+- wxui design reference [wxui-design](https://github.com/wxui/wxui-design)
 
 ## Development
 
-- [WeUI for 小程序 (weui-wxss)](https://github.com/Tencent/weui-wxss/)
-- [WeUI for Work (企业微信版)](https://work.weixin.qq.com/api/doc#12146)
-- [weui.js](https://github.com/weui/weui.js/)
-- [react-weui](https://github.com/weui/react-weui/)
+- [wxui for 小程序 (wxui-wxss)](https://github.com/Tencent/wxui-wxss/)
+- [wxui for Work (企业微信版)](https://work.weixin.qq.com/api/doc#12146)
+- [wxui.js](https://github.com/wxui/wxui.js/)
+- [react-wxui](https://github.com/wxui/react-wxui/)
 
 ## License
 
@@ -40,4 +40,4 @@ Please feel free to use and contribute to the development.
 
 ## Contribution
 
-If you have any ideas or suggestions to improve Wechat WeUI, welcome to submit an issue/pull request.
+If you have any ideas or suggestions to improve Wechat wxui, welcome to submit an issue/pull request.

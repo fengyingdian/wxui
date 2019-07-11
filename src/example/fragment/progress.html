@@ -4,34 +4,34 @@
         <p class="page__desc">进度条</p>
     </div>
     <div class="page__bd page__bd_spacing">
-        <div class="weui-progress">
-            <div class="weui-progress__bar">
-                <div class="weui-progress__inner-bar js_progress" style="width: 0%;"></div>
+        <div class="wxui-progress">
+            <div class="wxui-progress__bar">
+                <div class="wxui-progress__inner-bar js_progress" style="width: 0%;"></div>
             </div>
-            <a href="javascript:;" class="weui-progress__opr">
-                <i class="weui-icon-cancel"></i>
+            <a href="javascript:;" class="wxui-progress__opr">
+                <i class="wxui-icon-cancel"></i>
             </a>
         </div>
         <br>
-        <div class="weui-progress">
-            <div class="weui-progress__bar">
-                <div class="weui-progress__inner-bar js_progress" style="width: 50%;"></div>
+        <div class="wxui-progress">
+            <div class="wxui-progress__bar">
+                <div class="wxui-progress__inner-bar js_progress" style="width: 50%;"></div>
             </div>
-            <a href="javascript:;" class="weui-progress__opr">
-                <i class="weui-icon-cancel"></i>
+            <a href="javascript:;" class="wxui-progress__opr">
+                <i class="wxui-icon-cancel"></i>
             </a>
         </div>
         <br>
-        <div class="weui-progress">
-            <div class="weui-progress__bar">
-                <div class="weui-progress__inner-bar js_progress" style="width: 80%;"></div>
+        <div class="wxui-progress">
+            <div class="wxui-progress__bar">
+                <div class="wxui-progress__inner-bar js_progress" style="width: 80%;"></div>
             </div>
-            <a href="javascript:;" class="weui-progress__opr">
-                <i class="weui-icon-cancel"></i>
+            <a href="javascript:;" class="wxui-progress__opr">
+                <i class="wxui-icon-cancel"></i>
             </a>
         </div>
-        <div class="weui-btn-area">
-            <a href="javascript:;" class="weui-btn weui-btn_primary" id="btnUpload">上传</a>
+        <div class="wxui-btn-area">
+            <a href="javascript:;" class="wxui-btn wxui-btn_primary" id="btnUpload">上传</a>
         </div>
     </div>
     <div class="page__ft">
@@ -47,7 +47,7 @@
         function next() {
             if(progress > 100){
                 progress = 0;
-                $btnUpload.removeClass('weui-btn_disabled');
+                $btnUpload.removeClass('wxui-btn_disabled');
                 return;
             }
             $progress.css({width: progress + '%'});
@@ -56,9 +56,9 @@
         }
 
         $btnUpload.on('click', function(){
-            if ($btnUpload.hasClass('weui-btn_disabled')) return;
+            if ($btnUpload.hasClass('wxui-btn_disabled')) return;
 
-            $btnUpload.addClass('weui-btn_disabled');
+            $btnUpload.addClass('wxui-btn_disabled');
             next();
         });
     });

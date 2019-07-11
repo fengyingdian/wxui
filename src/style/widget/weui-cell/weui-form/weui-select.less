@@ -1,5 +1,5 @@
 /*
-* Tencent is pleased to support the open source community by making WeUI available.
+* Tencent is pleased to support the open source community by making wxui available.
 * 
 * Copyright (C) 2017 THL A29 Limited, a Tencent company. All rights reserved.
 * 
@@ -16,48 +16,48 @@
 
 @import "../../../base/fn";
 
-.weui-cell_select {
+.wxui-cell_select {
     padding: 0;
-    .weui-select {
+    .wxui-select {
         padding-right: 30px;
     }
-    .weui-cell__bd{
+    .wxui-cell__bd{
         &:after{
             content: " ";
             .setArrow(right, 8px, #B2B2B2, 2px);
 
             position: absolute;
             top: 50%;
-            right: @weuiCellGapH;
+            right: @wxuiCellGapH;
             margin-top: -5px;
         }
     }
 }
 
-.weui-select {
+.wxui-select {
     -webkit-appearance: none;
     border: 0;
     outline: 0;
     background-color: transparent;
     width: 100%;
     font-size: inherit;
-    height: @weuiCellHeight;
-    line-height: @weuiCellHeight;
+    height: @wxuiCellHeight;
+    line-height: @wxuiCellHeight;
     position: relative;
     z-index: 1;
-    padding-left: @weuiCellGapH;
+    padding-left: @wxuiCellGapH;
 }
 
-.weui-cell_select-before {
-    padding-right:@weuiCellGapH;
-    .weui-select{
-        width:@weuiCellLabelWidth;
+.wxui-cell_select-before {
+    padding-right:@wxuiCellGapH;
+    .wxui-select{
+        width:@wxuiCellLabelWidth;
         box-sizing: border-box;
     }
-    .weui-cell__hd {
+    .wxui-cell__hd {
         position:relative;
         &:after {
-            .setRightLine(@weuiCellBorderColor);
+            .setRightLine(@wxuiCellBorderColor);
         }
         &:before{
             content: " ";
@@ -65,21 +65,21 @@
 
             position: absolute;
             top: 50%;
-            right: @weuiCellGapH;
+            right: @wxuiCellGapH;
             margin-top: -5px;
         }
     }
-    .weui-cell__bd {
-        padding-left:@weuiCellGapH;
+    .wxui-cell__bd {
+        padding-left:@wxuiCellGapH;
         &:after{
             display:none;
         }
     }
 }
 
-.weui-cell_select-after {
-    padding-left:@weuiCellGapH;
-    .weui-select {
+.wxui-cell_select-after {
+    padding-left:@wxuiCellGapH;
+    .wxui-select {
         padding-left:0;
     }
 }

@@ -1,5 +1,5 @@
 /*
-* Tencent is pleased to support the open source community by making WeUI available.
+* Tencent is pleased to support the open source community by making wxui available.
 * 
 * Copyright (C) 2017 THL A29 Limited, a Tencent company. All rights reserved.
 * 
@@ -16,7 +16,7 @@
 
 @import "../../base/fn";
 
-.weui-dialog {
+.wxui-dialog {
     position: fixed;
     z-index: 5000;
     top: 50%;
@@ -24,57 +24,57 @@
     right: 16px;
     transform: translate(0, -50%);
 
-    background-color: @weuiDialogBackgroundColor;
+    background-color: @wxuiDialogBackgroundColor;
     text-align: center;
     border-radius: 3px;
     overflow: hidden;
 }
-.weui-dialog__hd {
-    padding: 32px @weuiDialogGapWidth 16px;
+.wxui-dialog__hd {
+    padding: 32px @wxuiDialogGapWidth 16px;
 }
-.weui-dialog__title {
+.wxui-dialog__title {
     font-weight: 700;
     font-size: 17px;
     line-height:1.4;
 }
-.weui-dialog__bd {
-    padding: 0 @weuiDialogGapWidth 32px;
+.wxui-dialog__bd {
+    padding: 0 @wxuiDialogGapWidth 32px;
     min-height: 40px;
     font-size: 17px;
     line-height: 1.4;
     word-wrap: break-word;
     word-break: break-all;
-    color: @weuiTextColorDesc;
+    color: @wxuiTextColorDesc;
     &:first-child{
-        padding:32px @weuiDialogGapWidth;
-        color:@weuiTextColorTitle;
+        padding:32px @wxuiDialogGapWidth;
+        color:@wxuiTextColorTitle;
     }
 }
-.weui-dialog__ft {
+.wxui-dialog__ft {
     position: relative;
     line-height: 64px;
     font-size: 17px;
     display: flex;
     &:after {
         content: " ";
-        .setTopLine(@weuiDialogLineColor);
+        .setTopLine(@wxuiDialogLineColor);
     }
 }
-.weui-dialog__btn {
+.wxui-dialog__btn {
     display: block;
     flex: 1;
-    color: @weuiDialogLinkColor;
+    color: @wxuiDialogLinkColor;
     font-weight:700;
     text-decoration: none;
     .setTapColor();
     &:active {
-        background-color: @weuiDialogLinkActiveBc;
+        background-color: @wxuiDialogLinkActiveBc;
     }
 
     position: relative;
     &:after {
         content: " ";
-        .setLeftLine(@weuiDialogLineColor);
+        .setLeftLine(@wxuiDialogLineColor);
     }
     &:first-child {
         &:after {
@@ -82,40 +82,40 @@
         }
     }
 }
-.weui-dialog__btn_default {
-    color: @weuiTextColorTitle;
+.wxui-dialog__btn_default {
+    color: @wxuiTextColorTitle;
 }
 
-.weui-skin_android{
-    .weui-dialog {
+.wxui-skin_android{
+    .wxui-dialog {
         text-align: left;
         box-shadow: 0 6px 30px 0 rgba(0, 0, 0, .1);
     }
-    .weui-dialog__title{
+    .wxui-dialog__title{
       font-size:22px;
       line-height:1.4;
     }
-    .weui-dialog__hd{
+    .wxui-dialog__hd{
         text-align: left;
     }
-    .weui-dialog__bd{
-        color:@weuiTextColorDesc;
+    .wxui-dialog__bd{
+        color:@wxuiTextColorDesc;
         font-size: 17px;
         text-align: left;
         &:first-child{
-            color:@weuiTextColorTitle;
+            color:@wxuiTextColorTitle;
         }
     }
-    .weui-dialog__ft{
+    .wxui-dialog__ft{
         display: block;
         text-align: right;
         line-height: 40px;
-        padding:0 @weuiDialogGapWidth 16px;
+        padding:0 @wxuiDialogGapWidth 16px;
         &:after{
             display: none;
         }
     }
-    .weui-dialog__btn{
+    .wxui-dialog__btn{
         display: inline-block;
         vertical-align: top;
         padding:0 .8em;
@@ -126,13 +126,13 @@
             margin-right: -.8em;
         }
     }
-    .weui-dialog__btn_default {
-        color: @weuiTextColorTitle;
+    .wxui-dialog__btn_default {
+        color: @wxuiTextColorTitle;
     }
 }
 
 @media screen and (min-width: 1024px) {
-    .weui-dialog {
+    .wxui-dialog {
         width: 35%;
     }
 }

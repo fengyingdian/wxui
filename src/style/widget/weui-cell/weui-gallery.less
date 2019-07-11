@@ -1,5 +1,5 @@
 /*
-* Tencent is pleased to support the open source community by making WeUI available.
+* Tencent is pleased to support the open source community by making wxui available.
 * 
 * Copyright (C) 2017 THL A29 Limited, a Tencent company. All rights reserved.
 * 
@@ -16,8 +16,8 @@
 
 @import "../../base/fn";
 
-@weuiGalleryOprHeight: 60px;
-.weui-gallery {
+@wxuiGalleryOprHeight: 60px;
+.wxui-gallery {
     display: none;
     position: fixed;
     top: 0;
@@ -27,20 +27,20 @@
     background-color: #000000;
     z-index: 1000;
 }
-.weui-gallery__img {
+.wxui-gallery__img {
     position: absolute;
     top: constant(safe-area-inset-top);
     top: env(safe-area-inset-top);
     right: constant(safe-area-inset-right);
     right: env(safe-area-inset-right);
-    bottom: calc(@weuiGalleryOprHeight ~"+ constant(safe-area-inset-bottom)");
-    bottom: calc(@weuiGalleryOprHeight ~"+ env(safe-area-inset-bottom)");
+    bottom: calc(@wxuiGalleryOprHeight ~"+ constant(safe-area-inset-bottom)");
+    bottom: calc(@wxuiGalleryOprHeight ~"+ env(safe-area-inset-bottom)");
     left: constant(safe-area-inset-left);
     left: env(safe-area-inset-left);
     background: center center no-repeat;
     background-size: contain;
 }
-.weui-gallery__opr {
+.wxui-gallery__opr {
     position: absolute;
     right: constant(safe-area-inset-right);
     right: env(safe-area-inset-right);
@@ -50,9 +50,9 @@
     left: env(safe-area-inset-left);
     background-color: #0D0D0D;
     color: #FFFFFF;
-    line-height: @weuiGalleryOprHeight;
+    line-height: @wxuiGalleryOprHeight;
     text-align: center;
 }
-.weui-gallery__del {
+.wxui-gallery__del {
     display: block;
 }

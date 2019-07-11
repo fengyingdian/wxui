@@ -1,5 +1,5 @@
 /*
-* Tencent is pleased to support the open source community by making WeUI available.
+* Tencent is pleased to support the open source community by making wxui available.
 * 
 * Copyright (C) 2017 THL A29 Limited, a Tencent company. All rights reserved.
 * 
@@ -16,67 +16,67 @@
 
 @import "../../../base/fn";
 
-.weui-form-preview{
+.wxui-form-preview{
     position: relative;
     background-color: #FFFFFF;
     &:before{
-        .setTopLine(@weuiCellBorderColor);
+        .setTopLine(@wxuiCellBorderColor);
     }
     &:after{
-        .setBottomLine(@weuiCellBorderColor);
+        .setBottomLine(@wxuiCellBorderColor);
     }
 }
-.weui-form-preview__hd{
+.wxui-form-preview__hd{
     position: relative;
-    padding: @weuiCellGapV;
+    padding: @wxuiCellGapV;
     text-align: right;
     line-height: 2.5em;
     &:after{
-        .setBottomLine(@weuiCellBorderColor);
-        left: @weuiCellGapH;
+        .setBottomLine(@wxuiCellBorderColor);
+        left: @wxuiCellGapH;
     }
-    .weui-form-preview__value{
+    .wxui-form-preview__value{
         font-style: normal;
         font-size: 1.6em;
     }
 }
-.weui-form-preview__bd{
-    padding: @weuiCellGapV;
+.wxui-form-preview__bd{
+    padding: @wxuiCellGapV;
     font-size: .9em;
     text-align: right;
-    color: @weuiTextColorDesc;
+    color: @wxuiTextColorDesc;
     line-height: 2;
 }
-.weui-form-preview__ft{
+.wxui-form-preview__ft{
     position: relative;
     line-height: 50px;
     display: flex;
     &:before {
-        .setTopLine(@weuiDialogLineColor);
+        .setTopLine(@wxuiDialogLineColor);
     }
 }
-.weui-form-preview__item{
+.wxui-form-preview__item{
     overflow: hidden;
 }
-.weui-form-preview__label{
+.wxui-form-preview__label{
     float: left;
     margin-right: 1em;
     min-width: 4em;
-    color: @weuiTextColorDesc;
+    color: @wxuiTextColorDesc;
     text-align: justify;
     text-align-last: justify;
 }
-.weui-form-preview__value{
+.wxui-form-preview__value{
     display: block;
     overflow: hidden;
     word-break:normal;
     word-wrap: break-word;
 }
-.weui-form-preview__btn {
+.wxui-form-preview__btn {
     position: relative;
     display: block;
     flex: 1;
-    color: @weuiDialogLinkColor;
+    color: @wxuiDialogLinkColor;
     text-align: center;
     .setTapColor();
     button&{
@@ -87,10 +87,10 @@
         font-size: inherit;
     }
     &:active {
-        background-color: @weuiDialogLinkActiveBc;
+        background-color: @wxuiDialogLinkActiveBc;
     }
     &:after {
-        .setLeftLine(@weuiDialogLineColor);
+        .setLeftLine(@wxuiDialogLineColor);
     }
     &:first-child {
         &:after {
@@ -98,9 +98,9 @@
         }
     }
 }
-.weui-form-preview__btn_default {
-    color: @weuiTextColorTitle;
+.wxui-form-preview__btn_default {
+    color: @wxuiTextColorTitle;
 }
-.weui-form-preview__btn_primary {
-    color: @weuiLinkColorDefault;
+.wxui-form-preview__btn_primary {
+    color: @wxuiLinkColorDefault;
 }

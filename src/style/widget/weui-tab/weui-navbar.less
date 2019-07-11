@@ -1,5 +1,5 @@
 /*
-* Tencent is pleased to support the open source community by making WeUI available.
+* Tencent is pleased to support the open source community by making wxui available.
 * 
 * Copyright (C) 2017 THL A29 Limited, a Tencent company. All rights reserved.
 * 
@@ -16,7 +16,7 @@
 
 @import "../../base/fn";
 
-.weui-navbar {
+.wxui-navbar {
     display: flex;
     position: relative;
     z-index: 500;
@@ -25,16 +25,16 @@
     padding-top:env(safe-area-inset-top);
 
     &:after {
-        .setBottomLine(@weuiLineColorLight);
+        .setBottomLine(@wxuiLineColorLight);
     }
 
-    & + .weui-tab__panel {
+    & + .wxui-tab__panel {
         padding-bottom:constant(safe-area-inset-bottom);
         padding-bottom:env(safe-area-inset-bottom);
     }
 }
 
-.weui-navbar__item {
+.wxui-navbar__item {
     position: relative;
     display: block;
     flex: 1;
@@ -43,19 +43,19 @@
     padding-top:calc(16px ~"+ env(safe-area-inset-top)");
     text-align: center;
     font-size: 17px;
-    line-height:unit((@weuiNavBarHeight - 32) / 17);
+    line-height:unit((@wxuiNavBarHeight - 32) / 17);
     .setTapColor();
 
     &:active {
-        background-color: @weuiBgColorActive;
+        background-color: @wxuiBgColorActive;
     }
 
-    &.weui-bar__item_on {
-        background-color: @weuiBgColorActive;
+    &.wxui-bar__item_on {
+        background-color: @wxuiBgColorActive;
     }
 
     &:after {
-        .setRightLine(@weuiLineColorLight);
+        .setRightLine(@wxuiLineColorLight);
     }
 
     &:first-child {

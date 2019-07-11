@@ -1,5 +1,5 @@
 /*
-* Tencent is pleased to support the open source community by making WeUI available.
+* Tencent is pleased to support the open source community by making wxui available.
 * 
 * Copyright (C) 2017 THL A29 Limited, a Tencent company. All rights reserved.
 * 
@@ -16,17 +16,17 @@
 
 @import "../../../base/fn";
 
-.weui-cells_checkbox {
-    .weui-check__label{
+.wxui-cells_checkbox {
+    .wxui-check__label{
       &:before{left:55px;}
     }
-    .weui-cell__hd {
-        padding-right: @weuiCellInnerGapH;
+    .wxui-cell__hd {
+        padding-right: @wxuiCellInnerGapH;
     }
-    .weui-icon-checked {
+    .wxui-icon-checked {
         &:before {
             content: '\EA01';
-            color: @weuiLineColorDark;
+            color: @wxuiLineColorDark;
             font-size: 23px;
             display: block;
             margin:0;
@@ -35,14 +35,14 @@
 }
 
 // method2 accessbility
-.weui-check {
+.wxui-check {
     // checkbox
-    .weui-cells_checkbox & {
+    .wxui-cells_checkbox & {
         &:checked {
-            & + .weui-icon-checked {
+            & + .wxui-icon-checked {
                 &:before {
                     content: '\EA06';
-                    color: @weuiColorPrimary;
+                    color: @wxuiColorPrimary;
                 }
             }
         }

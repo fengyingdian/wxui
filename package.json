@@ -1,18 +1,18 @@
 {
-    "name": "weui",
+    "name": "wxui",
     "version": "2.0.0",
     "description": "A UI library by WeChat official design team, includes the most useful widgets/modules in mobile web applications.",
     "keywords": [
-        "weui",
+        "wxui",
         "wechat",
         "weixin",
         "css",
         "less",
         "mobile"
     ],
-    "style": "dist/style/weui.css",
-    "less": "src/style/weui.less",
-    "main": "dist/style/weui.css",
+    "style": "dist/style/wxui.css",
+    "less": "src/style/wxui.less",
+    "main": "dist/style/wxui.css",
     "scripts": {
         "start": "gulp -ws",
         "test": "gulp release"
@@ -20,11 +20,11 @@
     "author": "wechat ui team",
     "repository": {
         "type": "git",
-        "url": "https://github.com/weui/weui.git"
+        "url": "https://github.com/fengyingdian/wxui.git"
     },
-    "homepage": "https://github.com/weui/weui",
+    "homepage": "https://github.com/fengyingdian/wxui",
     "bugs": {
-        "url": "https://github.com/weui/weui/issues"
+        "url": "https://github.com/fengyingdian/wxui/issues"
     },
     "license": "MIT",
     "devDependencies": {

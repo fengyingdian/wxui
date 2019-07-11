@@ -1,5 +1,5 @@
 /*
-* Tencent is pleased to support the open source community by making WeUI available.
+* Tencent is pleased to support the open source community by making wxui available.
 * 
 * Copyright (C) 2017 THL A29 Limited, a Tencent company. All rights reserved.
 * 
@@ -16,13 +16,13 @@
 
 @import "../../base/fn";
 
-.weui-cell_access {
+.wxui-cell_access {
     .setTapColor();
     color: inherit;
     &:active {
         background-color: #ECECEC;
     }
-    .weui-cell__ft {
+    .wxui-cell__ft {
         padding-right: 16px;
         position: relative;
         &:after {
@@ -35,11 +35,11 @@
         }
     }
 }
-.weui-cell_link{
-    color: @weuiLinkColorDefault;
+.wxui-cell_link{
+    color: @wxuiLinkColorDefault;
     font-size: 17px;
 
-    // 由于weui-cell:first-child的:before为隐藏，所以这里要重新显示出来
+    // 由于wxui-cell:first-child的:before为隐藏，所以这里要重新显示出来
     &:first-child{
         &:before{
             display: block;
